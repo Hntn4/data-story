@@ -52,9 +52,9 @@
 
   <header class="bg-secondary text-white">
     <div class="container text-center">
-      <h1>Hinton Data Story</h1>
-      <p class="lead">by ADD NAME(S) here</p>
-      <p class="lead">Last updated on ADD CURRENT DATE</p>
+      <h1>CCADV Support Services Across Connecticut</h1>
+      <p class="lead">Burke Hinton and Jeff Pendergast</p>
+      <p class="lead">Last updated on 1.18.22</p>
       <p class="lead">for Data Visualization for All</br>with Prof. Jack Dougherty</br>Trinity College, Hartford CT, USA</p>
     </div>
   </header>
@@ -64,20 +64,29 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2>Story</h2>
-          <p class="lead">TELL AND SHOW your story and data visualizations here. Notice how this HTML "lead" class tag enlarges and draws attention to this paragraph, compared to other paragraphs without this tag.</p>
+          <p class="lead">(add title question for intro here)</p>
 
-          <p>Start new paragraphs between p tags. Include links when appropriate, such as the <a href="https://handsondataviz.org">Hands-On DataViz</a> book.</p>
+          <p>The Connecticut Coalition Against Domestic Violence <a href="http://www.ctcadv.org/">(CCADV)</a> is the state's central domestic violence hotline providing 7 different services over the phone to over 25,000 CT residents in need a year, those seven consisting of counseling, victim advocacy, information providing, civil legal support, referrals, criminal justice support, and safety planning. After looking over the CCADV data from the past 2 years, we wanted to see where the agency’s services were being provided most, both by location and by racial demographic, in order to see if there are any inconsistencies between groups. More specifically, we wanted to know if any of the 7 services might be recommended disproportionately in certain regions or to certain groups.  
+Upon careful analysis, we recognized that New Haven is a significant outlier in Connecticut regions in terms of how much less likely the region is to recommend all services to callers. We hope CCADV is able to use this data to improve the quality of assistance they are able to offer to clients.</p>
 
-          <p>Compose your data story in your Google Doc, because it's easier to write and edit, especially when working with other people. When you're ready, go to this <a href="https://github.com/DataVizForAll/dataviz-story-template">GitHub dataviz-story-template repo</a> to create your own template, and publish it online using Settings > Pages.</a>
+          <p>Most strikingly, we found that the New Haven Region provided each service in a at a lower rate than any other region.  While keeping in mind they receive more total calls than any other region relative to their population (see map 1), the nearby Bridgeport region has a similar number of proportional calls and yet is above the CT average for services recommended across all the demographics. 
+Conversely, we found that the Stamford region provided services more often than any other region across demographics(See Chart 2). In fact, the difference in the percent of callers receiving the various services between Stamford and New Haven Regions is more than any other two regions across every service except Civil/Legal. 
+The greatest overall variance between regions in a single service was that between the New Haven and Meriden regions in the Civil/Legal service shown in Map 2. Tables 1, 2, and 3, all provided additional representation of the data shown in the maps and charts above. 
+</a>
 
-          <p>One advantage of this template is that you can quickly make and view edits on your local computer. Go to your GitHub repo and select Code > Download Zip, uncompress the folder, and install a free code editor tool such as <a href="https://atom.io">Atom Editor</a>, and open the "index.html" file to make edits directly on your local computer. View your edits by opening "index.html" with any browser, which is faster than waiting for GitHub Pages to update your online version every time you make a small change. After making several edits on your local computer, carefully delete the old "index.html" file in your online GitHub repo, and replace it with the updated "index.html" file from your local computer.</p>
+          <p>While we had access to a lot of raw data, normalizing it in such a way that made it meaningful was a good bit of work. You can view the work we did on our google sheet, which will be linked at the end of the section. Essentially, we began with the masked CCADV data and the Connecticut census data and went from there, making pivot tables, normalized data tables, and contextualizing the data in any possible way we thought would be useful. Even the slightest chance of using the data later meant it got attention. The most in-depth we went was with some of the CCADV data, in which we tracked the action taken post-call by the CCADV, and organized it by race, region, and proportionally to residents in both of those categories.</p>
 
-          <p>When describing charts, maps, or tables that appear further below, refer to them "...as shown in Figure 1" or "...as shown in Table 1" and include those figure/table numbers in the titles or captions below.</p>
+          <p>One of the most significant uncertainties in our work would be the data based on the callers that did not identify their race. It should be noted that some of the specifics for race/ethnicity were masked as to prevent identification of a victim: callers of unidentified race and callers from race/ethnicity groups with less than 5 records per age group per region were all placed into the “other-unknown” category (age group was a separate subcategory used to organize the masked caller data that we did not touch on in this report). As necessary as this is from a safety standpoint, it restricts the trust we can put into our findings, as they are missing fundamental information from just over 30% of first-time callers. We also did not include a lot of the data on victims outside of Connecticut, as it did not fit well into charts or maps that were state-based. It is also important to note that while we believe there’s a correlation here, there are a number of other factors influencing all of this information, and so the causal relationship we are looking for may not exist in the way we think it does.</p>
 
           <p>Embed each published visualization as an HTML iframe code, following instructions in HODV chapter 9, similar to the sample below.</p>
 
-          <iframe title="Connecticut created desegregated schools for only 41 percent of Hartford Black &amp;amp; Latino students in 2019-20" aria-label="Interactive area chart" id="datawrapper-chart-fdcm0" src="https://datawrapper.dwcdn.net/fdcm0/8/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-          </script>
+        <iframe title="How Frequent are Calls in Each Region?" aria-label="Map" id="datawrapper-chart-EmpTn" src="https://datawrapper.dwcdn.net/EmpTn/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="568"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>  
+        
+        <iframe title="How Does the Frequency of CCADV Services Vary Across Regions?" aria-label="Map" id="datawrapper-chart-CUw3P" src="https://datawrapper.dwcdn.net/CUw3P/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="593"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>
+        
+        <iframe title="Total Instances by Region" aria-label="Table" id="datawrapper-chart-GeCQ4" src="https://datawrapper.dwcdn.net/GeCQ4/1/" scrolling="no" frameborder="0" style="border: none;" width="651" height="1043"></iframe>
 
           <p>Figure 1: Explore the <a href="https://datawrapper.dwcdn.net/fdcm0/">interactive chart</a> AND ADD your description of the chart here. Make sure your caption includes a direct link to your published chart or map in case the embed code fails to display.</p>
 
